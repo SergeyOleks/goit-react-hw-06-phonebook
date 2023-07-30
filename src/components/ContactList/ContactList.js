@@ -5,7 +5,7 @@ import { Contact } from 'components/Contact/Contact';
 
 const getVisibleContacts = (filterValue, contactsList) => {
 
-  if (filterValue&& contactsList) {
+  if (filterValue.length>0 && contactsList) {
     return contactsList.filter(contact => {
       return contact.name.toLowerCase().includes(filterValue.toLowerCase());    
     });
