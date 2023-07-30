@@ -1,8 +1,6 @@
-
 import { useDispatch } from 'react-redux';
-import { delNumber } from '../../redux/contactSlice'
+import { delNumber } from '../../redux/contactSlice';
 import PropTypes from 'prop-types';
-
 
 export const Contact = ({ name, number, id }) => {
   const dispatch = useDispatch();
@@ -20,7 +18,7 @@ export const Contact = ({ name, number, id }) => {
 };
 
 Contact.propTypes = {
-    name: PropTypes.string,
-    number: PropTypes.string,
-    id:PropTypes.string,
+  name: PropTypes.string,
+  number: PropTypes.string,
+  id: PropTypes.string,
 };

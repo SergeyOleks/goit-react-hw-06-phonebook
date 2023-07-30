@@ -19,7 +19,7 @@ export const ContactList = () => {
   const contactValue = state => state.filter;
   const filterValue = useSelector(contactValue);
   
-  console.log(filterValue);
+ 
   const visibleContacts = getVisibleContacts(filterValue, contactsList);
   
   return (
